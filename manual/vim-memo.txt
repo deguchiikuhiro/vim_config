@@ -1,0 +1,9 @@
+文字コードを変換して保存する。
+
+:set fileencoding=utf-8
+:w
+
+文字コード
+euc-jp
+shift_jis
+utf-8

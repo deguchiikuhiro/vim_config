@@ -1,0 +1,25 @@
+filetype plugin indent on
+set encoding=sjis
+set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf-8,unicode
+set fileformats=unix,dos,mac
+set paste
+set expandtab
+set textwidth=0
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set backspace=indent,eol,start
+set incsearch
+set ignorecase
+set ruler
+set wildmenu
+set commentstring=\ #\ %s
+set foldlevel=0
+set clipboard+=unnamed
+set iminsert=0
+set imsearch=0
+syntax on
+nnoremap <Space>. :<C-u>edit $MYVIMRC<Enter>
+nnoremap <Space>s. :<C-u>source $MYVIMRC<Enter>
+nnoremap <C-h> :<C-u>help<Space>
