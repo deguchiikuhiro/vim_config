@@ -1,47 +1,47 @@
 "===================================================================
-"gvim‚Ìƒƒjƒ…[“™”ñ•\¦İ’è
+"gvimã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ç­‰éè¡¨ç¤ºè¨­å®š
 "===================================================================
-"ƒƒjƒ…[ƒo[‚ğ”ñ•\¦‚É‚·‚é
+"ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒãƒ¼ã‚’éè¡¨ç¤ºã«ã™ã‚‹
 set guioptions-=m
 
-"ƒc[ƒ‹ƒo[‚ğ”ñ•\¦‚É‚·‚é
+"ãƒ„ãƒ¼ãƒ«ãƒãƒ¼ã‚’éè¡¨ç¤ºã«ã™ã‚‹
 set guioptions-=T
 
-"¶‰E‚ÌƒXƒNƒ[ƒ‹ƒo[‚ğ”ñ•\¦‚É‚·‚é
+"å·¦å³ã®ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒãƒ¼ã‚’éè¡¨ç¤ºã«ã™ã‚‹
 set guioptions-=r
 set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
-"…•½ƒXƒNƒ[ƒ‹ƒo[‚ğ”ñ•\¦‚É‚·‚é
+"æ°´å¹³ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒãƒ¼ã‚’éè¡¨ç¤ºã«ã™ã‚‹
 set guioptions-=b
 
 colorscheme molokai-deg
 let g:molokai_original = 1
 let g:rehash256 = 1
 
-" indent-guides ‚ğ—LŒø‚É‚·‚é
+" indent-guides ã‚’æœ‰åŠ¹ã«ã™ã‚‹
 IndentGuidesEnable
 
-" 1ƒCƒ“ƒfƒ“ƒg–Ú‚©‚çƒKƒCƒh‚·‚é
+" 1ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆç›®ã‹ã‚‰ã‚¬ã‚¤ãƒ‰ã™ã‚‹
 let g:indent_guides_start_level = 1
 
-" ©“®ƒJƒ‰[‚ğ–³Œø‚É‚µ‚Äè“®‚Åİ’è‚·‚é
+" è‡ªå‹•ã‚«ãƒ©ãƒ¼ã‚’ç„¡åŠ¹ã«ã—ã¦æ‰‹å‹•ã§è¨­å®šã™ã‚‹
 let g:indent_guides_auto_colors = 0
 
-" Šï”ƒCƒ“ƒfƒ“ƒg‚ÌƒKƒCƒhƒJƒ‰[
+" å¥‡æ•°ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã®ã‚¬ã‚¤ãƒ‰ã‚«ãƒ©ãƒ¼
 hi IndentGuidesOdd  ctermbg=Green guibg=#006600
 
-" ‹ô”ƒCƒ“ƒfƒ“ƒg‚ÌƒKƒCƒhƒJƒ‰[
+" å¶æ•°ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã®ã‚¬ã‚¤ãƒ‰ã‚«ãƒ©ãƒ¼
 hi IndentGuidesEven ctermbg=Yellow guibg=#669900
 
-" ƒnƒCƒ‰ƒCƒgF‚Ì•Ï‰»‚Ì• (Terminal ‚Å‚Í–¢ƒTƒ|[ƒg)
+" ãƒã‚¤ãƒ©ã‚¤ãƒˆè‰²ã®å¤‰åŒ–ã®å¹… (Terminal ã§ã¯æœªã‚µãƒãƒ¼ãƒˆ)
 "let g:indent_guides_color_change_percent = 20
 
-" ƒKƒCƒh‚Ì•
+" ã‚¬ã‚¤ãƒ‰ã®å¹…
 let g:indent_guides_guide_size = 1
 
-"‘SŠpƒXƒy[ƒX‚ğƒnƒCƒ‰ƒCƒg•\¦
+"å…¨è§’ã‚¹ãƒšãƒ¼ã‚¹ã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆè¡¨ç¤º
 function! ZenkakuSpace()
     highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
 endfunction
@@ -50,7 +50,7 @@ if has('syntax')
     augroup ZenkakuSpace
         autocmd!
         autocmd ColorScheme       * call ZenkakuSpace()
-        autocmd VimEnter,WinEnter * match ZenkakuSpace /@/
+        autocmd VimEnter,WinEnter * match ZenkakuSpace /ã€€/
     augroup END
     call ZenkakuSpace()
 endif
