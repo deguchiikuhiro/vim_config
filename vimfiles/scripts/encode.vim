@@ -64,6 +64,11 @@ let vimrc_set_encoding = 1
 
 " 改行コードの自動認識
 " set fileformats=unix,dos,mac
+if &encoding == 'cp932'
+    set fileformat=dos
+else
+    set fileformat=unix
+endif
 
 if exists("loaded_ReCheckFENC")
     finish
