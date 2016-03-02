@@ -13,7 +13,6 @@ else
     scriptencoding utf-8
 endif
 set fileformats=unix,dos,mac
-set paste
 
 "===================================================================
 " タブをスペース4つ分に展開
@@ -23,6 +22,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+set paste
 set autoindent
 set incsearch
 set ruler
