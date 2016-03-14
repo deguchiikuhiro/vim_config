@@ -8,6 +8,7 @@ if g:is_Windows
     cd ~
     let g:CFGHOME=$HOME.'/vimfiles'
     scriptencoding cp932
+    set shellslash
 else
     let g:CFGHOME=$HOME.'/.vim'
     scriptencoding utf-8
