@@ -215,7 +215,7 @@ else
     let g:syntastic_auto_loc_list=2
 
     "Markdown関連
-    NeoBundle 'plasticboy/vim-markdown'
+"    NeoBundle 'plasticboy/vim-markdown'
     NeoBundle 'kannokanno/previm'
     NeoBundle 'tyru/open-browser.vim'
     au BufRead,BufNewFile *.md set filetype=markdown
