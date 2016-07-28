@@ -183,6 +183,9 @@ else
     \}
     nnoremap <Leader>u :GundoToggle<CR>
 
+    " ps1関連
+    NeoBundle 'PProvost/vim-ps1'
+
     " shell関連
     NeoBundle "Shougo/vimshell.vim"
     NeoBundleLazy "thinca/vim-quickrun", {
@@ -215,10 +218,12 @@ else
     let g:syntastic_auto_loc_list=2
 
     "Markdown関連
-    NeoBundle 'plasticboy/vim-markdown'
+"    NeoBundle 'plasticboy/vim-markdown'
     NeoBundle 'kannokanno/previm'
     NeoBundle 'tyru/open-browser.vim'
     au BufRead,BufNewFile *.md set filetype=markdown
+    NeoBundle 'dhruvasagar/vim-table-mode'
+    let g:table_mode_corner = "|"
 
 "
     " Python関連
