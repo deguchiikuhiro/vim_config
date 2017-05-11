@@ -7,3 +7,61 @@
 euc-jp
 shift_jis
 utf-8
+
+
+vimのキーバインド一覧の確認 
+
+
+デフォルトキーバインドの一覧 
+以下のテキストをヘルプコマンドで参照する
+
+
+:help index.txt
+
+
+ヘルプを日本語化していれば、日本語で一覧が表示される。
+
+
+自分で割り当てたキーマップの確認 
+.vimrcで自分で割り当てたキーマップの確認は以下のコマンドで確認する。
+
+
+:map " すべて確認
+:imap " インサートモードだけ
+:nmap " ノーマルモードだけ
+:vmap " ヴィジュアルモードだけ
+:verbose nmap " 定義元ファイル情報も表示
+
+
+
+vimのHELPの日本語化 1.Vim Documents in Japanese から「Vim日本語ドキュメント」のスナップショット版（vimdoc_ja-snapshot.tar.bz2）をダウンロードする
+2.解凍してできたdocフォルダとsyntaxフォルダを、.vim内1にコピーする（Macの場合はペーストで置き換えにならないように注意）
+3.Vimを起動して、以下のコマンドを実行する
+
+
+:helptags $HOME/.vim/doc  " Macの場合
+:helptags $VIM/vimfiles/doc  " Windowsの場合
+
+
+WWWブラウザ連携
+
+open-browser.vim で該当行でgxとする。
+
+
+
+例えば、UTF-8な環境でShift-JISで書かれた文書をvimで読むと当然文字化けする。
+ 元のファイルの文字コードは直したくないが、文字コードを指定してファイルを開き直すには
+
+
+:e ++enc=文字コード名
+
+
+とすればよい。文字コードは「euc-jp」「shift_jis」「utf-8」があれば十分だろう。
+
+
+・vimの文字コードを確認
+:set enc?
+・ファイルの文字コードを確認
+:set fenc?
+・エンコードを指定して保存し直す
+:set fenc=文字コード
